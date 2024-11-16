@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #7c4dff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+h1, h2 {
+    color: #5e35b1;
+}
+
+.introduction, .ingredients, .steps {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: disc inside;
+    padding: 0;
+}
+
+ol {
+    list-style: decimal inside;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #5e35b1;
+    color: white;
+}
