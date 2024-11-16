@@ -5,20 +5,24 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
-    color: white;
-    line-height: 1.6;
-    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .background {
-    background: url('background.png') no-repeat center center/cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Przyciemnia tło */
+    padding: 20px 40px;
+    border-radius: 10px;
 }
 
 .overlay {
