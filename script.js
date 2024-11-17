@@ -1,11 +1,22 @@
-// Lista obrazków tła
-const backgrounds = [
-    'url("background1.png")',
-    'url("background2.png")'
+// Tablica z obrazkami
+const images = [
+    'images/background1.png',
+    'images/background2.png',
 ];
 
-// Losowy wybór tła
-const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+// Indeks aktualnego obrazka
+let currentImageIndex = 0;
 
-// Ustawienie tła
-document.body.style.backgroundImage = randomBackground;
+function changeBackgroundImage() {
+    // Ustaw obrazek jako tło
+    document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+    // Przejdź do następnego obrazka, wróć do początku na końcu
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+// Zmień obrazek natychmiast po załadowaniu strony
+changeBackgroundImage();
+
+// Zmieniaj obrazek co 10 sekund
+setInterval(changeBackgroundImage, 10000);
