@@ -2,19 +2,28 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+	width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
     color: #ffffff;
+	line-height: 1.6;
     text-align: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+	position: relative;
 }
 
 .content {
-    background-color: rgba(0, 0, 0, 0.5); /* Przyciemnia tło */
-    padding: 20px 40px;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Przyciemnia tło */
+    width: 100%;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	padding: 20px;
 }
