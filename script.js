@@ -1,7 +1,7 @@
 // Lista obrazków tła
 const backgrounds = [
-    'url("background.png")',
-    'url("background1.jpg")'
+    'url("background1.png")',
+    'url("background2.png")'
 ];
 
 // Losowy wybór tła
