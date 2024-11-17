@@ -17,9 +17,9 @@ body {
 
 .content {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło pod tekstem */
+    background-color: rgba(0, 0, 0, 0.6); /* Półprzezroczyste tło pod tekstem */
     padding: 20px;
-    border-radius: 10px;
+    position: relative;
 }
 h1 {
     font-size: 3rem; 
