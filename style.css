@@ -27,3 +27,9 @@ body {
     text-align: center;
 	padding: 20px;
 }
+
+h1 {
+    font-size: 3rem; /* Zwiększa rozmiar czcionki do 48px (1rem = bazowy rozmiar) */
+    font-weight: bold;
+    letter-spacing: 2px; /* Odstęp między literami */
+}
