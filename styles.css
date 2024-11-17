@@ -9,18 +9,32 @@ body {
     font-size: 24px;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    background-size: cover; /* Dopasowanie obrazka do widoku */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out; /* Płynne przejście obrazków */
+    transition: background-image 1s ease-in-out;
+    position: relative; /* Dodaj, by pseudoelement działał poprawnie */
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Przyciemnienie całego tła */
+    z-index: 0; /* Warstwa poniżej treści */
 }
 
 .content {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Półprzezroczyste tło pod tekstem */
     padding: 20px;
-    position: relative;
+    position: relative; /* Aby treść była nad overlayem */
+    z-index: 1; /* Ustaw, by była nad przyciemnieniem */
 }
+
 h1 {
     font-size: 3rem; 
     font-weight: bold;
