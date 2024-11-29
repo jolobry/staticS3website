@@ -43,7 +43,10 @@ h1 {
 
 .center-image {
     max-width: 250px; /* Adjust the size as needed */
-    margin-top: 350px; /* Increase this value to push the image further down */
-    display: block;
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
 }
+
 
