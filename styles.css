@@ -43,6 +43,9 @@ h1 {
 
 .center-image {
     max-width: 200px; /* Adjust the size as needed */
-    margin-top: 20px; /* Add space below the heading */
-    display: block;
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
 }
+
