@@ -40,3 +40,9 @@ h1 {
     font-weight: bold;
     letter-spacing: 2px; 
 }
+
+.center-image {
+    max-width: 200px; /* Adjust the size as needed */
+    margin-top: 20px; /* Add space below the heading */
+    display: block;
+}
