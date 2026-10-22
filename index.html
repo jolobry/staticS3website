@@ -7,15 +7,66 @@
   <title>Joga Iyengara w Warszawie — zajęcia indywidualne i grupowe | olobry.net</title>
   <meta name="description" content="Praktyka jogi metodą B.K.S. Iyengara od ponad 10 lat. Zajęcia indywidualne w Warszawie oraz grupowe w Przystani w środy i niedziele.">
   <link rel="canonical" href="https://www.olobry.net/">
-  <link rel="preload" as="image" href="joga-hero.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="olobry.net">
+  <meta property="og:url" content="https://www.olobry.net/">
+  <meta property="og:title" content="Joga w Warszawie — zajęcia indywidualne i grupowe">
+  <meta property="og:description" content="Joga metodą B.K.S. Iyengara — świadoma praca z ciałem, oddechem i uważnością. Nie musisz mieć doświadczenia, żeby zacząć.">
+  <meta property="og:image" content="https://www.olobry.net/joga-hero.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta property="og:image:alt" content="Nauczyciel jogi podczas praktyki na macie w słonecznym wnętrzu">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.olobry.net/#website",
+        "url": "https://www.olobry.net/",
+        "name": "olobry.net",
+        "inLanguage": "pl-PL"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.olobry.net/#joga",
+        "name": "olobry.net — joga w Warszawie",
+        "description": "Zajęcia jogi metodą B.K.S. Iyengara: indywidualne z dojazdem do klienta w Warszawie oraz grupowe w Przystani w środy i niedziele.",
+        "url": "https://www.olobry.net/",
+        "image": "https://www.olobry.net/joga-hero.webp",
+        "email": "joga@olobry.pl",
+        "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" },
+        "areaServed": { "@type": "City", "name": "Warszawa" },
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Indywidualne zajęcia jogi w Warszawie" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grupowe zajęcia jogi w Przystani" } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="olobry.net — strona główna"></a>
-      <nav aria-label="Nawigacja główna">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="main-nav" aria-label="Nawigacja główna">
         <a class="active" href="#top">Strona główna</a>
         <a href="#indywidualne">Zajęcia indywidualne</a>
         <a href="#grupowe">Zajęcia grupowe</a>
@@ -27,13 +78,13 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-photo" role="img" aria-label="Nauczyciel jogi podczas praktyki na macie w ciepłym, słonecznym wnętrzu"></div>
+      <img class="hero-photo" src="joga-hero.webp" width="1672" height="941" fetchpriority="high" alt="Nauczyciel jogi w pozycji siedzącej z wyprostowaną nogą, na macie w ciepłym, słonecznym wnętrzu">
       <div class="hero-wash"></div>
       <div class="botanical botanical-top" aria-hidden="true"></div>
       <div class="container hero-content">
-        <h1><span>Znajdź przestrzeń<br>dla siebie.</span><em>Zacznij praktykę jogi.</em></h1>
+        <h1><span class="h1-kicker">Joga w Warszawie · zajęcia indywidualne i grupowe</span><span class="h1-main">Znajdź przestrzeń<br>dla siebie.</span><em>Zacznij praktykę jogi.</em></h1>
         <p class="lead">Joga metodą B.K.S. Iyengara — świadoma praca<br class="desktop-break"> z ciałem, oddechem i uważnością.</p>
-        <p class="intro-copy">Praktykuję od ponad 10 lat. Prowadzę zajęcia<br class="desktop-break"> indywidualne w Warszawie oraz zajęcia grupowe<br class="desktop-break"> w <a href="https://przystan.my/" target="_blank" rel="noopener noreferrer">Fundacji Przystan</a>.</p>
+        <p class="intro-copy">Praktykuję od ponad 10 lat. Prowadzę zajęcia<br class="desktop-break"> indywidualne w Warszawie oraz zajęcia grupowe<br class="desktop-break"> w <a href="https://przystan.my/" target="_blank" rel="noopener noreferrer">Fundacji Przystań<span class="visually-hidden"> (otwiera się w nowej karcie)</span></a>.</p>
         <p class="reassurance">Nie musisz mieć doświadczenia, żeby zacząć.</p>
         <div class="button-row">
           <a class="button button-primary" href="mailto:joga@olobry.pl?subject=Zapytanie%20o%20zaj%C4%99cia%20indywidualne">
@@ -46,7 +97,6 @@
           </a>
         </div>
       </div>
-      <div class="bottom-wave" aria-hidden="true"></div>
     </section>
 
     <section class="intro-section section" aria-labelledby="intro-title">
@@ -84,7 +134,7 @@
           <h2>Zajęcia grupowe w Przystani</h2>
           <p>Zapraszam na zajęcia jogi metodą B.K.S. Iyengara w środy i niedziele. Sprawdź aktualne informacje o miejscu, zapisach i organizacji zajęć na stronie Przystani.</p>
           <div class="schedule"><span>Środy</span><span>Niedziele</span></div>
-          <a class="button button-primary" href="https://przystan.systemate.pl/" target="_blank" rel="noopener noreferrer">Sprawdź zajęcia w Przystani</a>
+          <a class="button button-primary" href="https://przystan.systemate.pl/" target="_blank" rel="noopener noreferrer">Sprawdź zajęcia w Przystani <span aria-hidden="true">↗</span><span class="visually-hidden"> (otwiera się w nowej karcie)</span></a>
         </div>
         <div class="group-art" aria-hidden="true"><span class="sun"></span><span class="ring ring-one"></span><span class="ring ring-two"></span><span class="leaf leaf-one"></span><span class="leaf leaf-two"></span></div>
       </div>
