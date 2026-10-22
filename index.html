@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#e9dfcf">
-  <title>Joga Iyengara w Warszawie — zajęcia indywidualne i grupowe | olobry.net</title>
+  <title>Joga Iyengara w Warszawie — zajęcia indywidualne i grupowe</title>
   <meta name="description" content="Praktyka jogi metodą B.K.S. Iyengara od ponad 10 lat. Zajęcia indywidualne w Warszawie oraz grupowe w Przystani w środy i niedziele.">
   <link rel="canonical" href="https://www.olobry.net/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
@@ -26,7 +27,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <!-- Bez defer: klasa .js musi być ustawiona przed pierwszym renderem (inaczej menu mobilne „skacze”).
+       Reszta skryptu i tak czeka na DOMContentLoaded. -->
+  <script src="script.js"></script>
 
   <script type="application/ld+json">
   {
@@ -67,7 +70,7 @@
         <span class="visually-hidden">Menu</span>
       </button>
       <nav id="main-nav" aria-label="Nawigacja główna">
-        <a class="active" href="#top">Strona główna</a>
+        <a class="active" href="#top" aria-current="true">Strona główna</a>
         <a href="#indywidualne">Zajęcia indywidualne</a>
         <a href="#grupowe">Zajęcia grupowe</a>
         <a href="#o-mnie">O mnie</a>
@@ -78,7 +81,7 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <img class="hero-photo" src="joga-hero.webp" width="1672" height="941" fetchpriority="high" alt="Nauczyciel jogi w pozycji siedzącej z wyprostowaną nogą, na macie w ciepłym, słonecznym wnętrzu">
+      <img class="hero-photo" src="joga-hero.webp" srcset="joga-hero-1240.webp 1240w, joga-hero.webp 1672w" sizes="(max-width: 560px) 604px, 100vw" width="1672" height="941" fetchpriority="high" alt="Nauczyciel jogi w pozycji siedzącej z wyprostowaną nogą, na macie w ciepłym, słonecznym wnętrzu">
       <div class="hero-wash"></div>
       <div class="botanical botanical-top" aria-hidden="true"></div>
       <div class="container hero-content">

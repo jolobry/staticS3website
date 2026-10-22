@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && header.classList.contains('nav-open')) { setOpen(false); toggle.focus(); }
   });
+  document.addEventListener('click', (e) => {
+    if (header.classList.contains('nav-open') && !header.contains(e.target)) setOpen(false);
+  });
 
   if (!('IntersectionObserver' in window)) return;
   const byId = new Map(links.map((a) => [a.hash.slice(1), a]));

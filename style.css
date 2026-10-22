@@ -16,7 +16,7 @@ a{color:inherit}
 @supports(backdrop-filter:blur(1px)){.site-header.scrolled{background:rgba(255,250,242,.86);backdrop-filter:blur(10px)}}
 .header-inner{min-height:78px;display:flex;align-items:center;justify-content:flex-end;gap:30px}
 .brand{font-family:"DM Sans",Arial,sans-serif;font-size:clamp(1.25rem,1.65vw,1.65rem);font-weight:500;letter-spacing:-.045em;text-decoration:none;white-space:nowrap;color:var(--ink)}
-nav{display:flex;align-items:center;gap:clamp(18px,2.8vw,52px);font-size:clamp(.78rem,1.05vw,1rem);font-weight:600}
+nav{display:flex;align-items:center;gap:clamp(18px,2.8vw,52px);font-size:clamp(.875rem,1.05vw,1rem);font-weight:600}
 nav a{padding:10px 0;text-decoration:none;white-space:nowrap}
 .nav-toggle{display:none}
 nav a:hover,nav a.active{color:var(--rust)}
